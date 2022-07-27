@@ -1,7 +1,5 @@
 import os
 
-from pyparsing import empty
-
 currDirectory = os.getcwd()
 
 def wordCounter(file: str):
@@ -35,13 +33,8 @@ def wordCounter(file: str):
     for key in sorted(wordDict):
         outputLines.append(key + " " + str(wordDict[key]))
 
-    print(outputLines)
     with open(outputFile, "a") as oFile:
         oFile.writelines("\n".join(outputLines))
-
-
-
-
 
 inputFile = os.path.join(currDirectory, "WordCounter_Example", "Inputs", "test2.txt")
 wordCounter(inputFile)
