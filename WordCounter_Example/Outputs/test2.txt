@@ -1,0 +1,10 @@
+a 2
+and 3
+hello 3
+howdy 1
+one 2
+rabbit 1
+the 1
+tree 1
+two 1
+world 3

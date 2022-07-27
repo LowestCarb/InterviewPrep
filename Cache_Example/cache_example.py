@@ -23,8 +23,6 @@ def imageCache(file: str):
     cache_dict = {} #key - url, val - img data -> {"url": "imgSize", ...}
     cache_deque = deque() #store just the url
 
-    #Open output file
-    oFile = open(outputFile, "a")
     oLines = []
 
     #read in test file
